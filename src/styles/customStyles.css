@@ -1,0 +1,13 @@
+/* custom buttons */
+.btn:hover {
+   color: inherit;
+   text-decoration: none;
+   outline: none;
+   border-color: #9ecaed;
+   box-shadow: 0 0 10px #9ecaed;
+ }
+
+.btn-check:focus:focus {
+   outline: 0;
+   box-shadow: 0 0 1px #9ecaed;
+}

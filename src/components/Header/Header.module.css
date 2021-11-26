@@ -1,0 +1,7 @@
+.siteHeader {
+  height: 45px;
+  background-color: #9a9a9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

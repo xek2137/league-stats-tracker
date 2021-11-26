@@ -1,0 +1,25 @@
+.input {
+  border: 2px solid #dadada;
+  border-radius: 7px;
+  margin: 0 8px;
+}
+
+.input:focus {
+   outline: none;
+   border-color: #9ecaed;
+   box-shadow: 0 0 10px #9ecaed;
+}
+
+.input::placeholder {
+   padding-left: 8px;
+}
+
+.component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  height: 32px;
+}
