@@ -3,9 +3,8 @@ import styles from "./Header.module.css"
 import SearchBar from "../UI/SearchBar/SearchBar.js";
 
 const Header = () => {
-  console.log(styles);
   return (
-    <header className={styles.siteHeader}>
+    <header className={`${styles.siteHeader} container`}>
       <SearchBar />
     </header>
   )

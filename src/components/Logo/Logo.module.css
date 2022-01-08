@@ -1,0 +1,11 @@
+.logo {
+  background: url(../../assets/images/logo.png) center;
+  height: 240px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 24px auto;
+  background-size: cover;
+  overflow: hidden;
+}

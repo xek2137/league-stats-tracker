@@ -5,9 +5,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(147, 147, 147);
+  height: fit-content;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* custom buttons */
+
+.btn:hover {
+  text-decoration: none;
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
+}
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 1px #9ecaed;
 }

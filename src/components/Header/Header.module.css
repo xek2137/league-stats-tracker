@@ -1,7 +1,15 @@
 .siteHeader {
-  height: 45px;
-  background-color: #9a9a9a;
+  height: 100px;
+  width: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 12px;
+  background: url(../../assets/images/mapa2.jpeg) center;
+  background-size: cover;
+  border: 2px solid #4b4a4a;
+  box-shadow: rgba(0, 0, 0, 0.45) 0 19px 38px,
+  rgba(0, 0, 0, 0.67) 0 15px 12px;
+  overflow: hidden;
+  border-radius: 10px;
 }

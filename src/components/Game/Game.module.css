@@ -1,0 +1,18 @@
+.game {
+  margin-bottom: 24px;
+  height: auto;
+}
+
+.collapse-content.collapsed {
+  display: none;
+}
+
+.collapsed-content.expanded {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  .game {
+    width: 495px;
+  }
+}
