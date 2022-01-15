@@ -1,12 +1,9 @@
-import React, {useState, useEffect, useRef} from "react";
-import styles from "./SearchBar.module.css"
+import React, {useEffect, useRef} from "react";
+import styles from "./SearchBar.module.css";
 
-const SearchBar = () => {
-  const [term, setTerm] = useState('');
+
+const SearchBar = (props) => {
   const inputRef = useRef();
-  const search = () => {
-    console.log('szukaj', term);
-  }
 
   const focusInput = () => {
     inputRef.current.focus()
@@ -18,18 +15,20 @@ const SearchBar = () => {
 
   return (
     <div className="d-flex">
-      <input
-        ref={inputRef}
-        value={term}
-        onKeyDown={e => e.key === 'Enter' && search()}
-        onChange={e => setTerm(e.target.value)}
-        className={styles.input}
-        placeholder="Search" />
-      <button
-        onClick={search}
-        className="ml-1 btn btn-primary">
-        Search
-      </button>
+      <form onSubmit={props.submit}>
+        <input
+          ref={inputRef}
+          value={props.value}
+          onKeyDown={e => e.key === 'Enter' && props.change}
+          onChange={props.change}
+          className={styles.input}
+          placeholder="Search a Summoner.." />
+        <button
+          onClick={props.change}
+          className="ml-1 btn btn-primary">
+          Search
+        </button>
+      </form>
     </div>
   )
 

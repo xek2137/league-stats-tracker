@@ -1,10 +1,12 @@
 import React from 'react';
 import Game from "../Game/Game.js";
 
-const Games = () => {
+const Games = (props) => {
   return (
     <div className="container">
-      <h1>Your last games:</h1>
+      <h1>
+        {props.summonerName.name !== '' ? `${props.summonerName.name}, here are your last games:` : ''}
+      </h1>
       <Game />
       <Game />
       <Game />

@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./Header.module.css"
 import SearchBar from "../UI/SearchBar/SearchBar.js";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className={`${styles.siteHeader} container`}>
-      <SearchBar />
+      {props.children}
     </header>
   )
 
